@@ -111,7 +111,8 @@
     win.document.addEventListener('click', function (e) {
       const el = e.target && e.target.closest ? e.target.closest('a,button') : null;
       if (!el || el.type === 'submit') return;
-      if (CTA_TEXT.test(el.textContent || '')) once('click_cta');
+      const label = (el.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 80);
+      if (CTA_TEXT.test(label)) once('click_cta', { label });
     }, true);
     win.document.addEventListener('focusin', function (e) {
       if (e.target && e.target.closest && e.target.closest('form')) once('form_started');
