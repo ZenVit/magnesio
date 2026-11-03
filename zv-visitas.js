@@ -64,7 +64,8 @@
       landing: data.landing || '',
       product: data.product || '',
       endpoint: data.endpoint || '',
-      sessionId: stored(win.sessionStorage, 'zv_session_id', 'ses_'),
+      // Todas las landings comparten zenvit.github.io: la sesión va por landing, el visitante es uno solo.
+      sessionId: stored(win.sessionStorage, 'zv_session_id:' + (data.landing || ''), 'ses_'),
       visitorId: stored(win.localStorage, 'zv_visitor_id', 'vis_')
     };
     const sent = new Set();
