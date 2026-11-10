@@ -150,7 +150,7 @@ const CONTENIDO = {
     enlaceWhatsapp: "Prefiero pedir por WhatsApp",
   },
 
-  avisoLegal: "<b>Aviso importante:</b> suplemento alimentario, no medicamento. No diagnostica, trata, cura ni previene enfermedades y no reemplaza una alimentación equilibrada. No excedas la dosis indicada. Consultá con un profesional si estás embarazada, en lactancia, tomás medicamentos, tenés una condición médica o si el producto será utilizado por menores. La presentación y el rotulado pueden variar; verificá siempre el envase recibido.",
+  avisoLegal: "",
 
   pie: {
     descripcion: "Magnesium Complex 8 en 1 · Frasco de 60 cápsulas",
